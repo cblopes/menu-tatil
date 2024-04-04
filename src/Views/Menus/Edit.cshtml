@@ -1,0 +1,67 @@
+﻿@model Menu
+
+@{
+    ViewData["Title"] = "Editar Cardápio";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>Cardápio</h2>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createCategory">
+    Nova Categoria
+</button>
+
+<hr/>
+
+@if (Model.Categories.Count() == 0)
+{
+    <p>Ainda não foram adicionados categorias a este cardápio...</p>
+}
+else
+{
+    foreach (var category in Model.Categories)
+    {
+        <h3>@Html.DisplayName(category.Name)</h3>
+
+        if (category.MenuItems?.Count() == 0)
+        {
+            <p>Ainda não foram adicionados itens a esta categoria...</p>
+        }
+        else
+        {
+            foreach (var item in category.MenuItems)
+            {
+                <p>- @Html.DisplayName(item.Name)</p>
+            }
+        }
+    }
+}
+
+<!-- Modal para criar categoria -->
+<div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCategoryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="createCategoryLabel">Adicionar Nova Categoria</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form id="createCategoryForm">
+                    <div class="mb-3">
+                        <label for="categoryName" class="col-form-label">Nome da Categoria:</label>
+                        <input class="form-control" id="categoryName"></input>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
