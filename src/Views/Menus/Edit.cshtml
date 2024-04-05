@@ -41,10 +41,6 @@ else
                 </div>
             }
         }
-
-        <form id="antiForgeryForm" method="post">
-            @Html.AntiForgeryToken()
-        </form>
     }
 }
 
@@ -83,8 +79,7 @@ else
     <script>
         var menuId = '@Model.Id';
 
-        var formToken = $('#antiForgeryForm');
-        var token = formToken[0][0].value;
+        var token = $('input[name="__RequestVerificationToken"]').val();
 
         // Ajax para criação de novo categoria
         $(document).ready(function () {
