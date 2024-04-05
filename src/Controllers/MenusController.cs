@@ -3,6 +3,7 @@ using MenuTatil.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace MenuTatil.Controllers
 {
@@ -102,11 +103,91 @@ namespace MenuTatil.Controllers
             return RedirectToAction("Edit", "Menus", new { restaurantId = restaurantId });
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateCategory(Guid? id, [FromBody] CategoryDTO model)
+        {
+            if (id == null || id != model.Id) 
+            { 
+                return BadRequest(); 
+            }
+
+            var menu = await _context.Menus.FindAsync(id);
+
+            if (menu == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menu.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId()) 
+            {
+                return BadRequest();
+            }
+
+            // TODO: Verificar se a categoria já existe
+
+            Category category = new Category
+            {
+                MenuId = (Guid)model.Id,
+                Name = model.CategoryName
+            };
+
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCategory(Guid? id, [FromBody] CategoryDTO model)
+        {
+            if (id == null || id != model.Id)
+            {
+                return BadRequest();
+            }
+
+            var menu = await _context.Menus.FindAsync(id);
+
+            if (menu == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menu.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId())
+            {
+                return BadRequest();
+            }
+
+            // TODO: Verificar se a categoria já existe
+
+            Category category = new Category
+            {
+                MenuId = (Guid)model.Id,
+                Name = model.CategoryName
+            };
+
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
         private Guid GetUserId()
         {
             var userId = Guid.Parse(User.Claims.FirstOrDefault().Value);
 
             return userId;
+        }
+
+        public class CategoryDTO
+        {
+            public Guid? Id { get; set; }
+            public Guid? CategoryId { get; set; }
+            public string? CategoryName { get; set; }
         }
     }
 }

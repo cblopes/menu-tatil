@@ -6,8 +6,6 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<h2>Cardápio</h2>
-
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createCategory">
     Nova Categoria
 </button>
@@ -16,25 +14,37 @@
 
 @if (Model.Categories.Count() == 0)
 {
-    <p>Ainda não foram adicionados categorias a este cardápio...</p>
+    <div>Ainda não foram adicionados categorias a este cardápio...</div>
 }
 else
 {
     foreach (var category in Model.Categories)
     {
-        <h3>@Html.DisplayName(category.Name)</h3>
+        <h2>@Html.DisplayName(category.Name)</h2>
 
         if (category.MenuItems?.Count() == 0)
         {
-            <p>Ainda não foram adicionados itens a esta categoria...</p>
+            <div>Ainda não foram adicionados itens a esta categoria...</div>
         }
         else
         {
             foreach (var item in category.MenuItems)
             {
-                <p>- @Html.DisplayName(item.Name)</p>
+                <div class="row mb-2">
+                    <div class="col-md-10">
+                        @Html.DisplayName(item.Name)
+                    </div>
+
+                    <div class="col-md-2">
+                        R$ @Html.DisplayName(item.Price.ToString().Replace(".", ","))
+                    </div>
+                </div>
             }
         }
+
+        <form id="antiForgeryForm" method="post">
+            @Html.AntiForgeryToken()
+        </form>
     }
 }
 
@@ -49,19 +59,56 @@ else
             </div>
 
             <div class="modal-body">
-                <form id="createCategoryForm">
-                    <div class="mb-3">
-                        <label for="categoryName" class="col-form-label">Nome da Categoria:</label>
-                        <input class="form-control" id="categoryName"></input>
-                    </div>
-                </form>
+                <div class="mb-3">
+                    <label for="categoryName" class="col-form-label">Nome da Categoria:</label>
+                    <input class="form-control" id="categoryName">
+                </div>
             </div>
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Confirmar</button>
+                <button type="button" class="btn btn-primary" id="buttonCreateCategory">Confirmar</button>
             </div>
         </div>
 
     </div>
 </div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        var menuId = '@Model.Id';
+
+        var formToken = $('#antiForgeryForm');
+        var token = formToken[0][0].value;
+
+        // Ajax para criação de novo categoria
+        $(document).ready(function () {
+
+            $('#buttonCreateCategory').click(function () {
+                var categoryName = $('#categoryName').val();
+
+                $.ajax({
+                    url: '/Menus/CreateCategory/' + menuId,
+                    contentType: 'application/json',
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    data: JSON.stringify({ 
+                        id: menuId, 
+                        categoryName: categoryName 
+                    }),
+                    success: function () {
+                        location.reload();
+                    },
+                    error: function () {
+                        alert('Ops! Algo deu errado na criação da categoria.');
+                    }
+                });
+            });
+        });
+    </script>
+}
