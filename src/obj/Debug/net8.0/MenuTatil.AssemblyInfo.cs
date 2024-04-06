@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MenuTatil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db4a716cf6e4c6884f5b0111bf4f3dbaf84bcfd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f1b66ad28c6b4933d20f562e71063bfdacdd8a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MenuTatil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MenuTatil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Projetos\\Dotnet\\MenuTatil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "src\\Models\\Category.cs",
+              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Category.cs",
+              "RelativeToolTip": "src\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T12:32:32.216Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,34 +49,36 @@
               "RelativeDocumentMoniker": "src\\Controllers\\RestaurantsController.cs",
               "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\RestaurantsController.cs",
               "RelativeToolTip": "src\\Controllers\\RestaurantsController.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAAwHIAAAAiAAAA",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAwJIAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T03:57:03.361Z"
+              "WhenOpened": "2024-04-05T03:57:03.361Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Edit.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Menus\\Edit.cshtml",
               "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Edit.cshtml",
               "RelativeToolTip": "src\\Views\\Menus\\Edit.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAD8AAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-05T02:58:16.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MenusController.cs",
               "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\MenusController.cs",
               "RelativeDocumentMoniker": "src\\Controllers\\MenusController.cs",
               "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\MenusController.cs",
               "RelativeToolTip": "src\\Controllers\\MenusController.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAUwGoAAAAiAAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAuwNMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T23:39:29.711Z"
+              "WhenOpened": "2024-04-04T23:39:29.711Z",
+              "EditorCaption": ""
             }
           ]
         }

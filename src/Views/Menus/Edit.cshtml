@@ -20,7 +20,21 @@ else
 {
     foreach (var category in Model.Categories)
     {
-        <h2>@Html.DisplayName(category.Name)</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>@Html.DisplayName(category.Name)</h2>
+            </div>
+            
+            <div class="col-md-4">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateCategoryModal" data-id="@category.Id">
+                    Editar
+                </button>
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteCategoryModal" data-id="@category.Id">
+                    Excluir
+                </button>
+            </div>
+        </div>        
 
         if (category.MenuItems?.Count() == 0)
         {
@@ -70,6 +84,55 @@ else
     </div>
 </div>
 
+<!-- Modal para editar categoria -->
+<div class="modal fade" id="updateCategoryModal" tabindex="-1" aria-labelledby="updateCategoryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="updateCategoryLabel">Editar Categoria</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="categoryName" class="col-form-label">Nome da Categoria:</label>
+                    <input class="form-control" id="updateCategoryName">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="buttonUpdateCategory">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal para editar categoria -->
+<div class="modal fade" id="deleteCategoryModal" tabindex="-1" aria-labelledby="deleteCategoryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteCategoryLabel">Excluir Categoria</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                Deseja excluir a categoria selecionada?
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="buttonDeleteCategory">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 @section Scripts {
 
     @{
@@ -78,10 +141,9 @@ else
 
     <script>
         var menuId = '@Model.Id';
-
         var token = $('input[name="__RequestVerificationToken"]').val();
 
-        // Ajax para criação de novo categoria
+        // Ajax para criação de uma categoria
         $(document).ready(function () {
 
             $('#buttonCreateCategory').click(function () {
@@ -92,9 +154,9 @@ else
                     contentType: 'application/json',
                     type: 'POST',
                     headers: { 'RequestVerificationToken': token },
-                    data: JSON.stringify({ 
-                        id: menuId, 
-                        categoryName: categoryName 
+                    data: JSON.stringify({
+                        id: menuId,
+                        categoryName: categoryName
                     }),
                     success: function () {
                         location.reload();
@@ -105,5 +167,61 @@ else
                 });
             });
         });
+
+        // Ajax para edição de uma categoria
+        $(document).ready(function () {
+            var updateCategoryId;
+
+            $('#updateCategoryModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                updateCategoryId = button.data('id');
+            });
+
+            $('#buttonUpdateCategory').click(function () {
+                var categoryName = $('#updateCategoryName').val();
+
+                $.ajax({
+                    url: '/Menus/UpdateCategory/' + updateCategoryId,
+                    contentType: 'application/json',
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    data: JSON.stringify({
+                        id: updateCategoryId,
+                        menuId: menuId,
+                        categoryName: categoryName 
+                    }),
+                    success: function () {
+                        location.reload();
+                    },
+                    error: function () {
+                        alert('Ops! Algo deu errado na edição da categoria.');
+                    }
+                });
+            });
+        });
+
+        // Ajax para exclusão de uma categoria
+        $(document).ready(function () {
+            var deleteCategoryId;
+
+            $('#deleteCategoryModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                deleteCategoryId = button.data('id');
+            });
+
+            $('#buttonDeleteCategory').click(function () {
+                $.ajax({
+                    url: '/Menus/DeleteCategory/' + deleteCategoryId,
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    success: function () {
+                        location.reload();
+                    },
+                    error: function () {
+                        alert('Ops! Algo deu errado na edição da categoria.');
+                    }
+                });
+            });
+        });        
     </script>
 }

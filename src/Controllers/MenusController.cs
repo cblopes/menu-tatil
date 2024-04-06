@@ -141,6 +141,7 @@ namespace MenuTatil.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateCategory(Guid? id, [FromBody] CategoryDTO model)
         {
             if (id == null || id != model.Id)
@@ -148,9 +149,16 @@ namespace MenuTatil.Controllers
                 return BadRequest();
             }
 
-            var menu = await _context.Menus.FindAsync(id);
+            var menu = await _context.Menus.FindAsync(model.MenuId);
 
             if (menu == null)
+            {
+                return BadRequest();
+            }
+
+            var category = await _context.Categories.FindAsync(id);
+
+            if (category == null)
             {
                 return BadRequest();
             }
@@ -162,15 +170,43 @@ namespace MenuTatil.Controllers
                 return BadRequest();
             }
 
-            // TODO: Verificar se a categoria já existe
+            category.Name = model.CategoryName;
 
-            Category category = new Category
+            _context.Categories.Update(category);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        public async Task<IActionResult> DeleteCategory(Guid? id)
+        {
+            if (id == null)
             {
-                MenuId = (Guid)model.Id,
-                Name = model.CategoryName
-            };
+                return BadRequest();
+            }
 
-            await _context.Categories.AddAsync(category);
+            var categoryExists = await _context.Categories.FindAsync(id);
+
+            if (categoryExists == null)
+            {
+                return BadRequest();
+            }
+
+            var menuExists = await _context.Menus.FirstOrDefaultAsync(m => m.Id == categoryExists.MenuId);
+
+            if (menuExists == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menuExists.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId())
+            {
+                return BadRequest();
+            }
+
+            _context.Categories.Remove(categoryExists);
             await _context.SaveChangesAsync();
 
             return Ok();
@@ -186,7 +222,7 @@ namespace MenuTatil.Controllers
         public class CategoryDTO
         {
             public Guid? Id { get; set; }
-            public Guid? CategoryId { get; set; }
+            public Guid? MenuId { get; set; }
             public string? CategoryName { get; set; }
         }
     }
