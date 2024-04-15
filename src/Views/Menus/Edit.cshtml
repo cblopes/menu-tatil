@@ -12,7 +12,7 @@
 
 <hr/>
 
-@if (Model.Categories.Count() == 0)
+@if (Model.Categories is null || Model.Categories.Count() == 0)
 {
     <div>Ainda não foram adicionados categorias a este cardápio...</div>
 }
@@ -21,11 +21,11 @@ else
     foreach (var category in Model.Categories)
     {
         <div class="row">
-            <div class="col-md-8">
+            <div class="col">
                 <h2>@Html.DisplayName(category.Name)</h2>
             </div>
             
-            <div class="col-md-4">
+            <div class="col-md-2 py-2 px-3 btn-group text-end" role="group">
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateCategoryModal" data-id="@category.Id">
                     Editar
                 </button>
@@ -36,24 +36,36 @@ else
             </div>
         </div>        
 
-        if (category.MenuItems?.Count() == 0)
+        if (category.MenuItems is null || category.MenuItems.Count() == 0)
         {
             <div>Ainda não foram adicionados itens a esta categoria...</div>
         }
         else
         {
-            foreach (var item in category.MenuItems)
-            {
-                <div class="row mb-2">
-                    <div class="col-md-10">
-                        @Html.DisplayName(item.Name)
-                    </div>
-
-                    <div class="col-md-2">
-                        R$ @Html.DisplayName(item.Price.ToString().Replace(".", ","))
-                    </div>
+            <div class="card mb-3">
+                <div class="card-body py-2">
+                    <table class="table">
+                        <tbody>
+                            @foreach (var item in category.MenuItems)
+                            {
+                                <tr>
+                                    <td class="col-md-8">@Html.DisplayName(item.Name)</td>
+                                    <td>R$ @Html.DisplayName(item.Price.ToString().Replace(".", ","))</td>
+                                    <td class="dropdown text-end">
+                                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Opções
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" data-bs-itemId="@item.Id">Editar</a></li>
+                                            <li><a class="dropdown-item" data-bs-itemId="@item.Id">Excluir</a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
-            }
+            </div>
         }
     }
 }
@@ -222,6 +234,6 @@ else
                     }
                 });
             });
-        });        
+        });
     </script>
 }

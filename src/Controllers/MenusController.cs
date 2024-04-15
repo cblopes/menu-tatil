@@ -178,6 +178,8 @@ namespace MenuTatil.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteCategory(Guid? id)
         {
             if (id == null)
