@@ -1,0 +1,44 @@
+﻿@model Menu
+
+@{
+    ViewData["Title"] = "Cardápio";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr/>
+
+@if (Model.Categories.Count() == 0)
+{
+    <div>Ainda não foram adicionados categorias a este cardápio...</div>
+}
+else
+{
+    foreach (var category in Model.Categories)
+    {
+        <div class="row">
+            <div class="col-md-8">
+                <h2>@Html.DisplayName(category.Name)</h2>
+            </div>
+        </div>        
+
+        if (category.MenuItems?.Count() == 0)
+        {
+            <div>Ainda não foram adicionados itens a esta categoria...</div>
+        }
+        else
+        {
+            foreach (var item in category.MenuItems)
+            {
+                <div class="row mb-2">
+                    <div class="col-md-10">
+                        @Html.DisplayName(item.Name)
+                    </div>
+
+                    <div class="col-md-2">
+                        R$ @Html.DisplayName(item.Price.ToString().Replace(".", ","))
+                    </div>
+                </div>
+            }
+        }
+    }
+}
