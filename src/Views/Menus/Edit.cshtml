@@ -56,8 +56,8 @@ else
                                             Opções
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" data-bs-itemId="@item.Id">Editar</a></li>
-                                            <li><a class="dropdown-item" data-bs-itemId="@item.Id">Excluir</a></li>
+                                            <li><a class="dropdown-item" data-itemId="@item.Id">Editar</a></li>
+                                            <li><a class="dropdown-item" data-itemId="@item.Id">Excluir</a></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -151,18 +151,17 @@ else
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 
-    <script>
-        var menuId = '@Model.Id';
-        var token = $('input[name="__RequestVerificationToken"]').val();
+    <script>        
+        $(document).ready(() => {
+            const menuId = '@Model.Id';
+            const token = $('input[name="__RequestVerificationToken"]').val();
 
-        // Ajax para criação de uma categoria
-        $(document).ready(function () {
-
-            $('#buttonCreateCategory').click(function () {
-                var categoryName = $('#categoryName').val();
+            // Ajax para criação de uma categoria
+            $('#buttonCreateCategory').click(() => {
+                const categoryName = $('#categoryName').val();
 
                 $.ajax({
-                    url: '/Menus/CreateCategory/' + menuId,
+                    url: `/Menus/CreateCategory/${menuId}`,
                     contentType: 'application/json',
                     type: 'POST',
                     headers: { 'RequestVerificationToken': token },
@@ -170,66 +169,62 @@ else
                         id: menuId,
                         categoryName: categoryName
                     }),
-                    success: function () {
+                    success: () => {
                         location.reload();
                     },
-                    error: function () {
+                    error: () => {
                         alert('Ops! Algo deu errado na criação da categoria.');
                     }
                 });
             });
-        });
 
-        // Ajax para edição de uma categoria
-        $(document).ready(function () {
-            var updateCategoryId;
+            // Ajax para edição de uma categoria
+            let updateCategoryId;
 
-            $('#updateCategoryModal').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget);
+            $('#updateCategoryModal').on('show.bs.modal', event => {
+                const button = $(event.relatedTarget);
                 updateCategoryId = button.data('id');
             });
 
-            $('#buttonUpdateCategory').click(function () {
-                var categoryName = $('#updateCategoryName').val();
+            $('#buttonUpdateCategory').click(() => {
+                const categoryName = $('#updateCategoryName').val();
 
                 $.ajax({
-                    url: '/Menus/UpdateCategory/' + updateCategoryId,
+                    url: `/Menus/UpdateCategory/${updateCategoryId}`,
                     contentType: 'application/json',
                     type: 'POST',
                     headers: { 'RequestVerificationToken': token },
                     data: JSON.stringify({
                         id: updateCategoryId,
                         menuId: menuId,
-                        categoryName: categoryName 
+                        categoryName: categoryName
                     }),
-                    success: function () {
+                    success: () => {
                         location.reload();
                     },
-                    error: function () {
+                    error: () => {
                         alert('Ops! Algo deu errado na edição da categoria.');
                     }
                 });
             });
-        });
 
-        // Ajax para exclusão de uma categoria
-        $(document).ready(function () {
-            var deleteCategoryId;
+            // Ajax para exclusão de uma categoria
+            let deleteCategoryId;
 
-            $('#deleteCategoryModal').on('show.bs.modal', function (event) {
-                var button = $(event.relatedTarget);
+            $('#deleteCategoryModal').on('show.bs.modal', event => {
+                const button = $(event.relatedTarget);
                 deleteCategoryId = button.data('id');
             });
 
-            $('#buttonDeleteCategory').click(function () {
+            $('#buttonDeleteCategory').click(() => {
                 $.ajax({
-                    url: '/Menus/DeleteCategory/' + deleteCategoryId,
+                    url: `/Menus/DeleteCategory/${deleteCategoryId}`,
                     type: 'POST',
                     headers: { 'RequestVerificationToken': token },
-                    success: function () {
+                    success: () => {
                         location.reload();
                     },
-                    error: function () {
+                    error: () => {
                         alert('Ops! Algo deu errado na edição da categoria.');
                     }
                 });
