@@ -20,19 +20,21 @@ else
 {
     foreach (var category in Model.Categories)
     {
-        <div class="row">
+        <div class="row mb-2">
             <div class="col">
                 <h2>@Html.DisplayName(category.Name)</h2>
             </div>
-            
-            <div class="col-md-2 py-2 px-3 btn-group text-end" role="group">
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateCategoryModal" data-id="@category.Id">
-                    Editar
+
+            <div class="col dropdown text-end">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opções
                 </button>
 
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteCategoryModal" data-id="@category.Id">
-                    Excluir
-                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#createItemModal" data-id="@category.Id">Adicionar Item</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#updateCategoryModal" data-id="@category.Id">Editar</a></li>
+                    <li><a class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#deleteCategoryModal" data-id="@category.Id">Excluir</a></li>
+                </ul>
             </div>
         </div>        
 
@@ -55,9 +57,10 @@ else
                                         <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Opções
                                         </button>
+
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" data-itemId="@item.Id">Editar</a></li>
-                                            <li><a class="dropdown-item" data-itemId="@item.Id">Excluir</a></li>
+                                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#updateItemModal" data-id="@item.Id">Editar</a></li>
+                                            <li><a class="dropdown-item text-danger" data-bs-toggle="modal" data-bs-target="#deleteItemModal" data-id="@item.Id">Excluir</a></li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -145,6 +148,66 @@ else
     </div>
 </div>
 
+<!-- Modal para inclusão de novo item -->
+<div class="modal fade" id="createItemModal" tabindex="-1" aria-labelledby="createItemLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="createItemLabel">Adicionar Novo Item à Categoria</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="itemName" class="col-form-label">Nome do Item:</label>
+                    <input class="form-control" id="itemName">
+                </div>
+                <div class="mb-3">
+                    <label for="itemPrice" class="col-form-label">Preço do Item:</label>
+                    <input type="number" class="form-control" id="itemPrice">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="buttonCreateItem">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal para edição de item -->
+<div class="modal fade" id="updateItemModal" tabindex="-1" aria-labelledby="updateItemLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="updateItemLabel">Atualizar Item</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="updateItemName" class="col-form-label">Nome do Item:</label>
+                    <input class="form-control" id="updateItemName">
+                </div>
+                <div class="mb-3">
+                    <label for="updateItemPrice" class="col-form-label">Preço do Item:</label>
+                    <input type="number" class="form-control" id="updateItemPrice">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="buttonUpdateItem">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 @section Scripts {
 
     @{
@@ -226,6 +289,37 @@ else
                     },
                     error: () => {
                         alert('Ops! Algo deu errado na edição da categoria.');
+                    }
+                });
+            });
+
+            // Ajax para inclusão de novo item à categoria
+            let createItemForCategory;
+
+            $('#createItemModal').on('show.bs.modal', event => {
+                const button = $(event.relatedTarget);
+                createItemForCategory = button.data('id');
+            });
+
+            $('#buttonCreateItem').click(() => {
+                let itemName = $('#itemName').val();
+                let itemPrice = $('#itemPrice').val();
+
+                $.ajax({
+                    url: `/Menus/CreateItem/${createItemForCategory}`,
+                    contentType: 'application/json',
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    data: JSON.stringify({
+                        categoryId: createItemForCategory,
+                        name: itemName,
+                        price: itemPrice
+                    }),
+                    success: () => {
+                        location.reload();
+                    },
+                    error: () => {
+                        alert('Ops! Algo deu errado na inclusão do item.');
                     }
                 });
             });

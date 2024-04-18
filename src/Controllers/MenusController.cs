@@ -3,7 +3,6 @@ using MenuTatil.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace MenuTatil.Controllers
 {
@@ -214,6 +213,49 @@ namespace MenuTatil.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateItem(Guid? id, [FromBody] MenuItemDTO model)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            var categoryExists = await _context.Categories.FindAsync(id);
+
+            if (categoryExists == null)
+            {
+                return BadRequest();
+            }
+
+            var menuExists = await _context.Menus.FirstOrDefaultAsync(m => m.Id == categoryExists.MenuId);
+
+            if (menuExists == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menuExists.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId())
+            {
+                return BadRequest();
+            }
+
+            var item = new MenuItem
+            {
+                CategoryId = (Guid)id,
+                Name = model.Name,
+                Price = model.Price
+            };
+
+            await _context.MenuItems.AddAsync(item);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
         private Guid GetUserId()
         {
             var userId = Guid.Parse(User.Claims.FirstOrDefault().Value);
@@ -226,6 +268,14 @@ namespace MenuTatil.Controllers
             public Guid? Id { get; set; }
             public Guid? MenuId { get; set; }
             public string? CategoryName { get; set; }
+        }
+
+        public class MenuItemDTO
+        {
+            public Guid? Id { get; set;}
+            public string? Name { get; set; }
+            public decimal Price { get; set; }
+            public Guid? CategoryId { get; set; }
         }
     }
 }
