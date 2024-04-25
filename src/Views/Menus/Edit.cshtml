@@ -125,7 +125,7 @@ else
     </div>
 </div>
 
-<!-- Modal para editar categoria -->
+<!-- Modal para excluir categoria -->
 <div class="modal fade" id="deleteCategoryModal" tabindex="-1" aria-labelledby="deleteCategoryLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
 
@@ -202,6 +202,29 @@ else
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-primary" id="buttonUpdateItem">Confirmar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal para excluir item -->
+<div class="modal fade" id="deleteItemModal" tabindex="-1" aria-labelledby="deleteItemLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteItemLabel">Excluir Item</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                Deseja excluir o item selecionado?
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="buttonDeleteItem">Confirmar</button>
             </div>
         </div>
 
@@ -288,7 +311,7 @@ else
                         location.reload();
                     },
                     error: () => {
-                        alert('Ops! Algo deu errado na edição da categoria.');
+                        alert('Ops! Algo deu errado na exclusão da categoria.');
                     }
                 });
             });
@@ -320,6 +343,59 @@ else
                     },
                     error: () => {
                         alert('Ops! Algo deu errado na inclusão do item.');
+                    }
+                });
+            });
+
+            // Ajax para edição de item da categoria
+            let updateItemId;
+
+            $('#updateItemModal').on('show.bs.modal', event => {
+                const button = $(event.relatedTarget);
+                updateItemId = button.data('id');
+            });
+
+            $('#buttonUpdateItem').click(() => {
+                let itemName = $('#updateItemName').val();
+                let itemPrice = $('#updateItemPrice').val();
+
+                $.ajax({
+                    url: `/Menus/UpdateItem/${updateItemId}`,
+                    contentType: 'application/json',
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    data: JSON.stringify({
+                        id: updateItemId,
+                        name: itemName,
+                        price: itemPrice
+                    }),
+                    success: () => {
+                        location.reload();
+                    },
+                    error: () => {
+                        alert('Ops! Algo deu errado na edição do item.');
+                    }
+                });
+            });
+
+            // Ajax para exclusão de um item
+            let deleteItemId;
+
+            $('#deleteItemModal').on('show.bs.modal', event => {
+                const button = $(event.relatedTarget);
+                deleteItemId = button.data('id');
+            });
+
+            $('#buttonDeleteItem').click(() => {
+                $.ajax({
+                    url: `/Menus/DeleteItem/${deleteItemId}`,
+                    type: 'POST',
+                    headers: { 'RequestVerificationToken': token },
+                    success: () => {
+                        location.reload();
+                    },
+                    error: () => {
+                        alert('Ops! Algo deu errado na exlusão do item.');
                     }
                 });
             });

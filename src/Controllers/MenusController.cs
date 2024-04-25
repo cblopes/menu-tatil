@@ -256,6 +256,95 @@ namespace MenuTatil.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateItem(Guid? id, [FromBody] MenuItemDTO model)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            var itemExist = await _context.MenuItems.FindAsync(id);
+
+            if (itemExist == null)
+            {
+                return BadRequest();
+            }
+
+            var categoryExists = await _context.Categories.FindAsync(itemExist.CategoryId);
+
+            if (categoryExists == null)
+            {
+                return BadRequest();
+            }
+
+            var menuExists = await _context.Menus.FirstOrDefaultAsync(m => m.Id == categoryExists.MenuId);
+
+            if (menuExists == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menuExists.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId())
+            {
+                return BadRequest();
+            }
+
+            itemExist.Name = model.Name;
+            itemExist.Price = model.Price;
+
+            _context.MenuItems.Update(itemExist);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteItem(Guid? id)
+        {
+            if (id == null)
+            {
+                return BadRequest();
+            }
+
+            var itemExists = await _context.MenuItems.FindAsync(id);
+
+            if (itemExists == null)
+            {
+                return BadRequest();
+            }
+
+            var categoryExists = await _context.Categories.FindAsync(itemExists.CategoryId);
+
+            if (categoryExists == null)
+            {
+                return BadRequest();
+            }
+
+            var menuExists = await _context.Menus.FirstOrDefaultAsync(m => m.Id == categoryExists.MenuId);
+
+            if (menuExists == null)
+            {
+                return BadRequest();
+            }
+
+            var restaurant = await _context.Restaurants.FirstOrDefaultAsync(r => r.Id == menuExists.RestaurantId);
+
+            if (restaurant == null || restaurant.UserId != GetUserId())
+            {
+                return BadRequest();
+            }
+
+            _context.MenuItems.Remove(itemExists);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
         private Guid GetUserId()
         {
             var userId = Guid.Parse(User.Claims.FirstOrDefault().Value);
