@@ -102,7 +102,7 @@ namespace MenuTatil.Controllers
                 await _context.Restaurants.AddAsync(restaurant);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("MyRestaurants", "Restaurants", new { id = GetUserId() });
             }
 
             return View(model);
@@ -168,6 +168,11 @@ namespace MenuTatil.Controllers
 
             var address = await _context.Addresses.SingleOrDefaultAsync(a => a.Id == restaurant.AddressId);
 
+            if (address == null)
+            {
+                return BadRequest();
+            }
+
             address.Street = model.Street;
             address.Number = model.Number;
             address.Complement = model.Complement;
@@ -178,7 +183,7 @@ namespace MenuTatil.Controllers
             _context.Addresses.Update(address);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(MyRestaurants));
+            return RedirectToAction("MyRestaurants", "Restaurants", new { id = GetUserId() });
         }
 
         public async Task<IActionResult> Delete(Guid? id)
@@ -212,12 +217,7 @@ namespace MenuTatil.Controllers
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(MyRestaurants));
-        }
-
-        private bool RestaurantExists(Guid id)
-        {
-            return _context.Restaurants.Any(e => e.Id == id);
+            return RedirectToAction("MyRestaurants", "Restaurants", new { id = GetUserId() });
         }
 
         private Guid GetUserId()

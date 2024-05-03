@@ -15,26 +15,26 @@ else
 {
     foreach (var category in Model.Categories)
     {
-        <div class="row">
+        <div class="row mb-2">
             <div class="col-md-8">
-                <h2 class="pb-2">@Html.DisplayName(category.Name)</h2>
+                <h2>@Html.DisplayName(category.Name)</h2>
             </div>
         </div>        
 
         if (category.MenuItems is null || category.MenuItems.Count() == 0)
         {
-            <div>Ainda não foram adicionados itens a esta categoria...</div>
+            <div class="mb-3">Ainda não foram adicionados itens a esta categoria...</div>
         }
         else
         {
-            <div class="card">
+            <div class="card mb-3">
                 <div class="card-body py-2">
                     <table class="table">
                         <tbody>
                             @foreach (var item in category.MenuItems)
                             {
                                 <tr>
-                                    <td>@Html.DisplayName(item.Name)</td>
+                                    <td class="col-md-10">@Html.DisplayName(item.Name)</td>
                                     <td>R$ @Html.DisplayName(item.Price.ToString().Replace(".", ","))</td>
                                 </tr>
                             }

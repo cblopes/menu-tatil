@@ -8602,24 +8602,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\christhian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\MenuTatil.csproj",
+      "projectUniqueName": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\MenuTatil.csproj",
       "projectName": "MenuTatil",
-      "projectPath": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\MenuTatil.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\obj\\",
+      "projectPath": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\MenuTatil.csproj",
+      "packagesPath": "C:\\Users\\christhian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\christhian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8702,7 +8697,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

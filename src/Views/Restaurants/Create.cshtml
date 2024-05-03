@@ -1,13 +1,16 @@
-﻿@model MenuTatil.ViewModels.CreateRestaurantDTO
+﻿@using Microsoft.AspNetCore.Identity
+@model MenuTatil.ViewModels.CreateRestaurantDTO
+@inject UserManager<IdentityUser> UserManager
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Novo Restaurante";
+
+    var userId = @User.Claims.FirstOrDefault()?.Value;
 }
 
-<h1>Create</h1>
-
-<h4>Restaurant</h4>
+<h1>@ViewData["Title"]</h1>
 <hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
@@ -61,15 +64,15 @@
                 <span asp-validation-for="State" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group d-grid">
+                <input type="submit" value="Confirmar" class="btn btn-primary" />
+            </div>
+
+            <div class="d-grid">
+                <a class="btn btn-secondary" asp-action="MyRestaurants" asp-route-id="@userId">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

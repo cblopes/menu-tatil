@@ -28,9 +28,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Phone)
             </td>
-            <td>
-                <a class="btn btn-warning" asp-controller="Menus" asp-action="Index" asp-route-restaurantId="@item.Id">Ver Cardápio</a>
-                <a class="btn btn-warning" asp-controller="Restaurants" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+            <td class="text-end">
+                <div class="btn-group" role="group" aria-label="Botões">
+                    <a class="btn btn-outline-primary" asp-controller="Restaurants" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                    <a class="btn btn-primary" asp-controller="Menus" asp-action="Index" asp-route-restaurantId="@item.Id">Ver Cardápio</a>
+                </div>
             </td>
         </tr>
 }

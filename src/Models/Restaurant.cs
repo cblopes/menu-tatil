@@ -1,9 +1,15 @@
-﻿namespace MenuTatil;
+﻿using System.ComponentModel;
+
+namespace MenuTatil;
 
 public class Restaurant
 {
     public Guid Id { get; set; }
+
+    [DisplayName("Nome")]
     public string? Name { get; set; }
+
+    [DisplayName("Telefone")]
     public string? Phone { get; set; }
     public Guid UserId { get; set; }
     public Guid AddressId { get; set; }

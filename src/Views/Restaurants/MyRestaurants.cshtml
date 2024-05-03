@@ -15,12 +15,8 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                Nome
-            </th>
-            <th>
-                Celular
-            </th>
+            <th>Nome</th>
+            <th>Telefone</th>
             <th></th>
         </tr>
     </thead>
@@ -33,10 +29,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Phone)
             </td>
-            <td>
-                <a class="btn btn-warning"  asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a class="btn btn-success"  asp-controller="Menus" asp-action="Create" asp-route-restaurantId="@item.Id">Ver Cardápio</a> |
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+            <td class="text-end">
+                <div class="btn-group" role="group">
+                    <a class="btn btn-secondary" asp-controller="Menus" asp-action="Create" asp-route-restaurantId="@item.Id">Ver Cardápio</a>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-action="Edit" asp-route-id="@item.Id">Editar</a></li>
+                            <li><a class="dropdown-item text-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a></li>
+                        </ul>
+                    </div>
+                </div>
             </td>
         </tr>
 }

@@ -1,89 +1,97 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projetos\\Dotnet\\MenuTatil\\",
+  "WorkspaceRootPath": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\myrestaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\myrestaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\myrestaurants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\viewmodels\\updaterestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\viewmodels\\updaterestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\restaurants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\viewmodels\\updaterestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\viewmodels\\updaterestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\viewmodels\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\viewmodels\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\models\\restaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|d:\\projetos\\dotnet\\menutatil\\src\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|c:\\users\\christhian\\documents\\projetos\\menu-tatil\\src\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2326C12-89C9-41A4-AF4A-0C9D292ADC8F}|src\\MenuTatil.csproj|solutionrelative:src\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -94,56 +102,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Edit.cshtml",
-              "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Edit.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Edit.cshtml",
-              "RelativeToolTip": "src\\Views\\Restaurants\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-01T03:23:29.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateRestaurantDTO.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\ViewModels\\UpdateRestaurantDTO.cs",
-              "RelativeDocumentMoniker": "src\\ViewModels\\UpdateRestaurantDTO.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\ViewModels\\UpdateRestaurantDTO.cs",
-              "RelativeToolTip": "src\\ViewModels\\UpdateRestaurantDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T03:22:25.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Details.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Details.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Details.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Details.cshtml",
               "RelativeToolTip": "src\\Views\\Restaurants\\Details.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAD8AAAAfAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-01T03:10:35.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Edit.cshtml",
+              "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Edit.cshtml",
+              "RelativeToolTip": "src\\Views\\Restaurants\\Edit.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T03:23:29.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Index.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Index.cshtml",
               "RelativeToolTip": "src\\Views\\Restaurants\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-01T03:09:16.14Z",
               "EditorCaption": ""
@@ -151,113 +146,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Menus\\Edit.cshtml",
+              "RelativeDocumentMoniker": "src\\Views\\Menus\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Menus\\Edit.cshtml",
+              "RelativeToolTip": "src\\Views\\Menus\\Edit.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAC8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T17:18:21.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Menus\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Views\\Menus\\Index.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Menus\\Index.cshtml",
+              "RelativeToolTip": "src\\Views\\Menus\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T13:46:29.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Create.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Create.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Create.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Create.cshtml",
               "RelativeToolTip": "src\\Views\\Restaurants\\Create.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAD0AAAASAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEsAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-01T03:06:39.321Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "src\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "src\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T22:40:57.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Edit.cshtml",
-              "RelativeDocumentMoniker": "src\\Views\\Menus\\Edit.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Edit.cshtml",
-              "RelativeToolTip": "src\\Views\\Menus\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAACMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T17:18:21.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Views\\Menus\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Menus\\Index.cshtml",
-              "RelativeToolTip": "src\\Views\\Menus\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAUwCsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-06T13:46:29.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MyRestaurants.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\MyRestaurants.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\MyRestaurants.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Restaurants\\MyRestaurants.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\MyRestaurants.cshtml",
-              "RelativeToolTip": "src\\Views\\Restaurants\\MyRestaurants.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\MyRestaurants.cshtml*",
+              "RelativeToolTip": "src\\Views\\Restaurants\\MyRestaurants.cshtml*",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACEAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-06T13:53:52.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RestaurantsController.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\RestaurantsController.cs",
-              "RelativeDocumentMoniker": "src\\Controllers\\RestaurantsController.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\RestaurantsController.cs",
-              "RelativeToolTip": "src\\Controllers\\RestaurantsController.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAAwNYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T03:57:03.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T22:57:12.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Address.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "src\\Models\\Address.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Address.cs",
-              "RelativeToolTip": "src\\Models\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T03:07:51.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Delete.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Restaurants\\Delete.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Restaurants\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Restaurants\\Delete.cshtml",
               "RelativeToolTip": "src\\Views\\Restaurants\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-01T03:12:31.5Z",
               "EditorCaption": ""
@@ -265,23 +211,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MenusController.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\MenusController.cs",
-              "RelativeDocumentMoniker": "src\\Controllers\\MenusController.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Controllers\\MenusController.cs",
-              "RelativeToolTip": "src\\Controllers\\MenusController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUBAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T23:39:29.711Z",
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "src\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "src\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T22:44:29.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
+              "Title": "UpdateRestaurantDTO.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\ViewModels\\UpdateRestaurantDTO.cs",
+              "RelativeDocumentMoniker": "src\\ViewModels\\UpdateRestaurantDTO.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\ViewModels\\UpdateRestaurantDTO.cs",
+              "RelativeToolTip": "src\\ViewModels\\UpdateRestaurantDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:22:25.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateRestaurantDTO.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\ViewModels\\CreateRestaurantDTO.cs",
+              "RelativeDocumentMoniker": "src\\ViewModels\\CreateRestaurantDTO.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\ViewModels\\CreateRestaurantDTO.cs",
+              "RelativeToolTip": "src\\ViewModels\\CreateRestaurantDTO.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:08:49.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:40:57.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Restaurant.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Restaurant.cs",
+              "RelativeDocumentMoniker": "src\\Models\\Restaurant.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Restaurant.cs",
+              "RelativeToolTip": "src\\Models\\Restaurant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:06:01.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "src\\Controllers\\RestaurantsController.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "src\\Controllers\\RestaurantsController.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAcwKoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T03:57:03.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "src\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-25T22:57:12.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "src\\Models\\Address.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Address.cs",
+              "RelativeToolTip": "src\\Models\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T03:07:51.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MenusController.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\MenusController.cs",
+              "RelativeDocumentMoniker": "src\\Controllers\\MenusController.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Controllers\\MenusController.cs",
+              "RelativeToolTip": "src\\Controllers\\MenusController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUBAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T23:39:29.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "src\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -289,23 +335,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "src\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "src\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-25T22:44:29.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "site.css",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "src\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\wwwroot\\css\\site.css",
               "RelativeToolTip": "src\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -313,11 +347,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "src\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAACPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -325,11 +359,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "AboutUs.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Home\\AboutUs.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Home\\AboutUs.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Home\\AboutUs.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Home\\AboutUs.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Home\\AboutUs.cshtml",
               "RelativeToolTip": "src\\Views\\Home\\AboutUs.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -337,11 +371,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Category.cs",
               "RelativeDocumentMoniker": "src\\Models\\Category.cs",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Models\\Category.cs",
               "RelativeToolTip": "src\\Models\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -349,11 +383,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Projetos\\Dotnet\\MenuTatil\\src\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\christhian\\Documents\\Projetos\\menu-tatil\\src\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "src\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
