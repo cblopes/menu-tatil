@@ -30,6 +30,7 @@
             </td>
             <td>
                 <a class="btn btn-warning" asp-controller="Menus" asp-action="Index" asp-route-restaurantId="@item.Id">Ver Cardápio</a>
+                <a class="btn btn-warning" asp-controller="Restaurants" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
             </td>
         </tr>
 }

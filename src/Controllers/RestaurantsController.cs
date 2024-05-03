@@ -36,6 +36,7 @@ namespace MenuTatil.Controllers
             return View(restaurants);
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -44,6 +45,7 @@ namespace MenuTatil.Controllers
             }
 
             var restaurant = await _context.Restaurants
+                .Include(r => r.Address)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
             if (restaurant == null)
@@ -51,7 +53,19 @@ namespace MenuTatil.Controllers
                 return NotFound();
             }
 
-            return View(restaurant);
+            var restaurantDTO = new CreateRestaurantDTO
+            {
+                Name = restaurant.Name,
+                Phone = restaurant.Phone,
+                Street = restaurant.Address?.Street,
+                Number = restaurant.Address?.Number,
+                Complement = restaurant.Address?.Complement,
+                District = restaurant.Address?.District,
+                City = restaurant.Address?.City,
+                State = restaurant.Address?.State,
+            };
+
+            return View(restaurantDTO);
         }
 
         public IActionResult Create()
@@ -101,47 +115,70 @@ namespace MenuTatil.Controllers
                 return NotFound();
             }
 
-            var restaurant = await _context.Restaurants.FindAsync(id);
+            var restaurant = await _context.Restaurants
+                .Include(r => r.Address)
+                .SingleOrDefaultAsync(r => r.Id == id);
 
             if (restaurant == null)
             {
                 return NotFound();
             }
 
-            return View(restaurant);
+            var restaurantDTO = new UpdateRestaurantDTO
+            {
+                Name = restaurant.Name,
+                Phone = restaurant.Phone,
+                Street = restaurant.Address?.Street,
+                Number = restaurant.Address?.Number,
+                Complement = restaurant.Address?.Complement,
+                District = restaurant.Address?.District,
+                City = restaurant.Address?.City,
+                State = restaurant.Address?.State,
+            };
+
+            return View(restaurantDTO);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Phone,IsActive")] Restaurant restaurant)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Phone,Street,Number,Complement,District,City,State")] UpdateRestaurantDTO model)
         {
-            if (id != restaurant.Id)
+            if (id != model.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(restaurant);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!RestaurantExists(restaurant.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-
-                return RedirectToAction(nameof(Index));
+                return View(model);
             }
-            return View(restaurant);
+
+            var restaurant = await _context.Restaurants.FindAsync(id);
+
+            if (restaurant == null)
+            {
+                return BadRequest();
+            }
+
+            restaurant.Name = model.Name;
+            restaurant.Phone = model.Phone;
+
+            _context.Restaurants.Update(restaurant);
+            await _context.SaveChangesAsync();
+
+            var address = await _context.Addresses.SingleOrDefaultAsync(a => a.Id == restaurant.AddressId);
+
+            address.Street = model.Street;
+            address.Number = model.Number;
+            address.Complement = model.Complement;
+            address.District = model.District;
+            address.City = model.City;
+            address.State = model.State;
+
+            _context.Addresses.Update(address);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(MyRestaurants));
         }
 
         public async Task<IActionResult> Delete(Guid? id)
@@ -175,7 +212,7 @@ namespace MenuTatil.Controllers
 
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(MyRestaurants));
         }
 
         private bool RestaurantExists(Guid id)
